@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/tBookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        />
+
+    <EditText
+        android:id="@+id/tBookAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@+id/tBookTitle" />
+
+    <EditText
+        android:id="@+id/tBookGenre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@+id/tBookAuthor"/>
+
+    <EditText
+
+        android:id="@+id/tBookYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@+id/tBookGenre"/>
+
+    <EditText
+        android:id="@+id/tBookAnnotation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/tBookYear"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/imageLayout"
+        android:layout_below="@+id/tBookAnnotation">
+        <ImageView
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:id="@+id/imageViewCover"
+            android:scaleType="fitCenter"/>
+
+        <ImageButton
+            android:id="@+id/btnLoadImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="50dp"
+
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/edit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/buttonLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/delete"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:id="@+id/btnDelete"
+            />
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/save"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:id="@+id/btnSave"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
